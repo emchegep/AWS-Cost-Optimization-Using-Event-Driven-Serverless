@@ -7,6 +7,12 @@ terraform {
       version = "~> 6.0"        # Use a version of the AWS provider that is compatible with version
     }
   }
+
+  backend "s3" {
+    bucket = "devops-skool-tf-states"
+    key    = "sell-my-stuff-backend/terraform.tfstate"
+    region = "us-east-2"
+  }
 }
 
 provider "aws" {
