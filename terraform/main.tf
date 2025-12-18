@@ -10,7 +10,7 @@ terraform {
 
   backend "s3" {
     bucket = "devops-skool-tf-states"
-    key    = "sell-my-stuff-backend/terraform.tfstate"
+    key    = "cost-optimization/terraform.tfstate"
     region = "us-east-2"
   }
 }
