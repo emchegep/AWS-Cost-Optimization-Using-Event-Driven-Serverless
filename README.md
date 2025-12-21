@@ -10,3 +10,4 @@ The Lambda function fetches all EBS snapshots owned by the same account ('self')
 the Lambda function to work, it needs to be triggered by a scheduled event (e.g., EventBridge) to run at regular intervals (e.g., daily or weekly).
 
 ### Architectural Diagram
+![Cost Optimization Diagram](assets/cost_optimization.jpg)

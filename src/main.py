@@ -10,6 +10,8 @@ def lambda_handler(event, context):
     instances_response = ec2.describe_instances(Filters=[{
         'Name':'instance-state-name', 'Values': ['running']}])
 
+    print(instances_response)
+
     active_instance_ids = set()
 
     for reservation in instances_response['Reservations']:

@@ -15,7 +15,9 @@ data "aws_iam_policy_document" "lambda_policy" {
     effect = "Allow"
     actions = [
       "ec2:DescribeInstances",
-      "ec2:DescribeSnapshots"
+      "ec2:DescribeVolumes",
+      "ec2:DescribeSnapshots",
+      "ec2:DeleteSnapshot"
     ]
     resources = ["*"]
   }
